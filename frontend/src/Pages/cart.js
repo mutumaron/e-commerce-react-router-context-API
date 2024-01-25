@@ -1,7 +1,12 @@
+import CartItem from "../Components/CartItem/CartItem";
 
 const CartPage = () => {
 
-    return<p>CartPage</p>
+    return(
+        <div>
+            <CartItem/>
+        </div>
+    );
 };
 
 export default CartPage;

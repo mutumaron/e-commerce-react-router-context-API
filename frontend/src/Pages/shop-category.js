@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import './shop-category.css';
+import './css/shop-category.css';
 import { ShopContext } from "../Context/ShopContext";
 import dropdownIcon from "../Components/Assets/dropdown_icon.png";
 import Item from "../Components/Item/Item";
@@ -22,6 +22,7 @@ const ShopCategoryPage = (props) => {
                     if (props.category === item.category){
                         return(
                             <Item
+                            id={item.id}
                             key={item.id}
                             name={item.name}
                             image={item.image}
